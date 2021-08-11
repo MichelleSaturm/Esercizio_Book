@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>La Fortezza dei Libri</title>
+    <script src="https://kit.fontawesome.com/ac69570f7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <table border="0" width="800" align="center">
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <header>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="images/Logo.jpg" alt="logo" class="logo">
+                                    </td>
+                                    <td>
+                                        <h1>La Fortezza dei Libri</h1>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </header>
+                </td>
+            </tr>
+            <tr>
+                <td class="sidebar">
+                    <h4><i class="fas fa-bookmark"></i> Sidebar</h4>
+                    <nav>
+                        <ul class="nav_items">
+                            <li><a class="navbar" href="home.html">Home</a></li>
+                            <li><a class="navbar" href="aboutus.html">About us</a></li>
+                            <li><a class="navbar" href="addbook.html">Aggiungi Libro</a></li>
+                        </ul>
+
+                    </nav>
+                </td>
+                <td>
+                    <main>
+                        <h2><i class="fas fa-book"></i> Aggiungi un libro</h2>
+                        <div>
+                            <img src="images/addbook_img.jpg" alt="main_img" width="120" class="img_float" />
+                            <i>Chi non legge, a 70 anni avrà vissuto una sola vita: la propria. Chi legge avrà vissuto 5000 anni: c’era quando Caino uccise Abele, quando Renzo sposò Lucia, quando Leopardi ammirava l’infinito… perché la lettura è un’immortalità all’indietro.</i><br />
+                            -Umberto Eco
+                        </div>
+                        <hr />
+                        <form action="addbook.html">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="isbn"><b>Codice ISBN</b></label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="isbn" id="isbn" placeholder="inserisci ISBN (max 13)" maxlength="13" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="titolo"><b>Titolo</b></label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="titolo" id="titolo" placeholder="inserisci titolo" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="autore"><b>Autore</b></label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="autore" id="autore" placeholder="inserisci autore" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="datauscita"><b>Data di Uscita</b></label>
+                                        </td>
+                                        <td>
+                                            <input type="date" name="datauscita" id="datauscita" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="categoria"><b>Categoria</b></label>
+                                        </td>
+                                        <td>
+                                            <select multiple name="categoriaLibri" size="5">
+                                                <option value="">-- Scegli le Categorie --</option>
+                                                <option value="narrativa">Narrativa</option>
+                                                <option value="fantascienza">Fantascienza</option>
+                                                <option value="drammatico">Drammatico</option>
+                                                <option value="saggistica">Saggistica</option>
+                                                <option value="romantico">Romantico</option>
+                                                <option value="giallo">Giallo</option>
+                                                <option value="storico">Storico</option>
+                                                <option value="fantasy">Fantasy</option>
+                                                <option value="biografia">Biografia</option>
+                                                <option value="ucronico">Ucronico</option>
+                                                <option value="avventura">Avventura</option>
+                                                <option value="distopico">Distopico</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="disponibilita"><b>Disponibile?</b></label>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="disponibile" id="disponibile" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="recensione"><b>Recensione</b></label>
+                                        </td>
+                                        <td>
+                                            <textarea name="recensione" placeholder="inserisci la recensione"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input type="submit" value="Aggiungi Libro" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+
+                    </main>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="left">
+                    <hr />
+                    <footer> &copy; 2021 La Fortezza dei Libri</footer>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
